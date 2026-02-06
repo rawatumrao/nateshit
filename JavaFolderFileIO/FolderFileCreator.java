@@ -11,7 +11,7 @@ public class FolderFileCreator {
     
     public static void main(String[] args) {
         // Base folder name
-        String baseFolderName = "Folder-free";
+        String baseFolderName = "folder-tree";
         
         try {
             // Create folder structure with 3 depth levels
@@ -58,7 +58,7 @@ public class FolderFileCreator {
         
         // If we haven't reached max depth, create a subfolder
         if (currentDepth < maxDepth - 1) {
-            String subFolderName = folderName + File.separator + "Folder-free-level" + (currentDepth + 1);
+            String subFolderName = folderName + File.separator + "folder-tree-level" + (currentDepth + 1);
             createFolderStructure(subFolderName, maxDepth, currentDepth + 1);
         }
     }
