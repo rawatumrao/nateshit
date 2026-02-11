@@ -5,7 +5,6 @@ This demonstrates the code structure and expected output.
 Replace the URL with your actual data source.
 """
 
-import numpy as np
 import pandas as pd
 
 print("=" * 80)
@@ -15,7 +14,6 @@ print("=" * 80)
 print("\n1. BASIC CODE STRUCTURE:")
 print("-" * 80)
 print("""
-import numpy as np
 import pandas as pd
 
 # Load data from URL

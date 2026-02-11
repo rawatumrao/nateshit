@@ -7,7 +7,6 @@ to indicate whether an employee needs training based on their rating.
 Training Policy: Employees with rating <= 3.5 require training.
 """
 
-import numpy as np
 import pandas as pd
 
 
