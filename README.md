@@ -157,6 +157,57 @@ For beginners, it's recommended to follow this order:
 2. Move to **oop/** directory to learn object-oriented programming
 3. Finally, explore **advanced/** directory for more complex features
 
+## Employee Training Requirement Analysis (Python)
+
+This repository also includes a Python-based data analysis tool for determining employee training requirements based on performance ratings.
+
+### Dataset
+- **employee_data.csv**: Contains employee information from three cities (Mumbai, Bangalore, New Delhi)
+  - Departments: Finance, HR, Marketing, Sales
+  - Ratings: Out of 5
+  
+### Training Policy
+Employees with a rating of 3.5 or below are required to attend training.
+
+### Setup
+1. Install required dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Analysis
+
+#### Option 1: Using Local CSV File
+```bash
+python3 training_requirement.py
+```
+
+This will:
+- Load the employee dataset from `employee_data.csv`
+- Add a 'Training' column ('Yes' for rating ≤ 3.5, 'No' otherwise)
+- Display comprehensive analysis including:
+  - Complete employee data with training requirements
+  - Summary statistics
+  - Training requirements by city
+  - Training requirements by department
+- Save the processed data to `employee_data_with_training.csv`
+
+#### Option 2: Using Remote URL Data Source
+```bash
+python3 training_requirement_url.py
+```
+
+This version:
+- Loads employee data directly from a remote URL
+- Applies the same training requirement logic (rating ≤ 3.5)
+- Displays complete analysis with all available data columns
+- Saves the processed data to `employee_data_with_training_url.csv`
+
+The URL version is useful when you need to analyze data from external sources without downloading files locally.
+
+### Output
+The scripts generate CSV files with an additional 'Training' column indicating whether each employee needs training.
+
 ## Contributing
 
 Feel free to add more examples or improve existing ones!
