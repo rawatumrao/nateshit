@@ -35,3 +35,4 @@ env/
 
 # Output files
 employee_data_with_training.csv
+employee_data_with_training_url.csv
